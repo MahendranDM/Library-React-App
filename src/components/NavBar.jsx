@@ -1,12 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <div>
-
- <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-       
 
         <button
           className="navbar-toggler"
@@ -51,7 +49,6 @@ const NavBar = () => {
         </div>
       </div>
     </nav>
-    </div>
   )
 }
 
