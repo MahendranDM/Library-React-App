@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark bg-dark shadow"
+      style={{ fontFamily: "Poppins, sans-serif" }}
+    >
+      <div className="container">
 
         <button
           className="navbar-toggler"
@@ -18,29 +21,32 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
+            <li className="nav-item mx-3">
+              <Link className="nav-link text-white fw-bold fs-5" to="/">
                 Books
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/add">
+            <li className="nav-item mx-3">
+              <Link className="nav-link text-white fw-bold fs-5" to="/add">
                 Add Book
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/search">
+            <li className="nav-item mx-3">
+              <Link className="nav-link text-white fw-bold fs-5" to="/search">
                 Search Book
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/delete">
+            <li className="nav-item mx-3">
+              <Link className="nav-link text-white fw-bold fs-5" to="/delete">
                 Delete Book
               </Link>
             </li>

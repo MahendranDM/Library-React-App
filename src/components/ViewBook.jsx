@@ -73,7 +73,7 @@ const ViewBook = () => {
       auth: "Homer",
       price: "899",
     },
-  ]);
+  ])
 
   return (
     <div>
